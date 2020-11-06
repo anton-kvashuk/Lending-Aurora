@@ -1,0 +1,361 @@
+@import "style_zero.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+$mainWidth: 1440px;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Poppins', sans-serif;
+
+.container {
+  width: $mainWidth;
+}
+header {
+  position: relative;
+  height: 657px;
+  overflow: hidden;
+  // margin-top: 24px 0 0 0;
+  background-image: url(/img/bg/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: slide 30s infinite;
+
+  .rectangle {
+    width: 1440px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+
+    height: 24px;
+    .center-rec {
+      margin: 0 auto;
+      height: 17px;
+      margin-top: 4px;
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+
+      text-align: center;
+      color: #000000;
+    }
+    .right-rec {
+      position: absolute;
+      margin-right: 24px;
+      height: 15px;
+      left: 21.21%;
+      right: 0%;
+      top: calc(50% - 15px / 2);
+
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 15px;
+
+      text-align: right;
+      letter-spacing: 0.0833333px;
+
+      color: #000000;
+    }
+    .right-rec img {
+      height: 11px;
+      width: 8px;
+      left: 0px;
+      top: 2px;
+      border-radius: 0px;
+    }
+  }
+  .main_header {
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      rgba(51, 51, 51, 0.9) 0%,
+      rgba(27, 27, 27, 0.2245) 0%,
+      rgba(0, 0, 0, 0.0001) 20%
+    );
+
+    margin-top: 24px;
+    .main_header_content {
+      &:hover {
+        .rectangle {
+          background: #f7f7f7;
+        }
+        background-color: #ffffff;
+        .logo {
+          color: #333333;
+        }
+        .center_block {
+          .search_panell {
+            .search {
+              background: rgba(247, 247, 247, 0.693);
+              .search_button {
+                background-image: url(/img/icon/search-icon.svg);
+              }
+              .search_input {
+                color: #000000;
+                &::-webkit-input-placeholder {
+                  color: #000000;
+                }
+                &::-moz-placeholder {
+                  color: #000000;
+                }
+              }
+            }
+          }
+          .search_nav_link {
+            & a {
+              color: #000000;
+            }
+          }
+        }
+        .sign_block {
+          color: #000000;
+          & a {
+            color: #000000;
+          }
+          img {
+            background-image: url(/img/icon/basket.svg);
+          }
+        }
+      }
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .logo {
+        margin: 40px 0 0 24px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 57px;
+        /* identical to box height */
+
+        letter-spacing: 0.95px;
+        color: #ffffff;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+      }
+      .center_block {
+        margin-top: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .search_panell {
+          .search {
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 16px 16px 16px;
+            width: 584px;
+            height: 48px;
+            background: rgba(247, 247, 247, 0.24);
+            border-radius: 3px;
+            .search_input {
+              width: 80%;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 16px;
+              opacity: 1;
+              letter-spacing: 0.8px;
+              color: #ffffff;
+              background: rgba(135, 63, 63, 0);
+              &::-webkit-input-placeholder {
+                color: #ffffff;
+              }
+              &::-moz-placeholder {
+                color: #ffffff;
+              }
+            }
+            .search_button {
+              background: rgba(247, 247, 247, 0.01);
+            }
+          }
+        }
+        .search_nav_link {
+          margin-top: 18px;
+          margin-bottom: 5px;
+          display: flex;
+          justify-content: space-between;
+          width: 641px;
+          & a {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+          }
+        }
+      }
+      .sign_block {
+        width: 148px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 48px 24px 0 0;
+        color: #ffffff;
+
+        & a {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 11px;
+          line-height: 16px;
+          text-align: right;
+          letter-spacing: 1px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .down_text {
+      position: absolute;
+      margin: 150px 327px 0 327px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 90px;
+      /* identical to box height */
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+.main {
+  width: $mainWidth;
+  height: 146px;
+  background: #ffffff;
+  .section {
+    width: 440px;
+    height: 82px;
+    margin: 32px 500px;
+    span {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.872727px;
+      color: #000000;
+    }
+    .send_mail {
+      margin-top: 14px;
+      display: flex;
+      justify-content: first baseline;
+      align-items: center;
+      .email {
+        height: 32px;
+        width: 334px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height */
+        letter-spacing: 0.8px;
+        color: #4a4a4a;
+        padding-left: 12px;
+        border: 1px solid #e1e0e1;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+      .reg_btn {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #ffffff;
+        width: 94px;
+        height: 32px;
+        margin-left: 12px;
+        background: #000000;
+        color: #ffffff;
+        border-radius: 3px;
+        padding: 5px 15px 7px 15px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+footer {
+  padding-top: 26px;
+  padding-bottom: 14px;
+  width: $mainWidth;
+  background: #f7f7f7;
+  & a {
+    color: #000000;
+  }
+
+  .footer_content {
+    margin: 26px 267px 66px 282px;
+    display: flex;
+    justify-content: space-between;
+    .list span {
+      font-family: Cormorant Garamond;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 1.16364px;
+      color: #000000;
+    }
+    .list ul,
+    div {
+      margin-top: 11px;
+    }
+    .list li {
+      margin-top: 6px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 19px;
+      letter-spacing: 0.1px;
+      color: #000000;
+    }
+    .social_web a {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .copyright {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 13px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #000000;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-image: url(/img/bg/bg1.jpg);
+  }
+  50% {
+    background-image: url(/img/bg/bg2.jpg);
+  }
+}
