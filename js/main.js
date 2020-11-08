@@ -1,7 +1,7 @@
 const menuButton = document.querySelector('.menu-btn');
-const menu = document.querySelector('.header');
+const menu = document.querySelector('.head');
 menuButton.addEventListener('click', function() {
-  menu.classList.toggle('header-active');
+  menu.classList.toggle('head-active');
   menuButton.classList.toggle('menu-btn-active');
 })
 
